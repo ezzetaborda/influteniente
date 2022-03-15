@@ -1,0 +1,66 @@
+/* 
+* FONTS 
+*/
+$roboto: 'Roboto', sans-serif; /* Parrafos */
+$rubik: 'Rubik', sans-serif; /* Titulos y navLinks  */
+$oswald: 'Oswald', sans-serif;
+$impact: Impact,'Arial Narrow Bold', sans-serif; /* listas de cuentas  */
+$herofont: 'Alfa Slab One', cursive; /* Fuente del hero */
+/* 
+* COLORS 
+*/
+$color1: #001f3b; /* fondo general */
+$color2: #041d30; /* Fondo de sections azules */
+$color3: #ff3c00; /* naranja Influteniente */
+$color4: #02101b; /* fondo header y footer */
+$fondosection4: url(/multimedia/images/fondosection3.png); /* fondo de Section4parrafo */
+
+/* 
+* Titulo de productos
+ */
+@mixin tituloprincipal {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    background-color: $color3;
+    font-size: 30px;
+    font-family: $rubik;
+    color: white;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    -webkit-text-stroke-width: 1.5px;
+    -webkit-text-stroke-color: black;
+}
+
+/* 
+* Titulo lado izquierdo
+ */
+@mixin tituloLeft {
+    font-size: 25px;
+    font-family: $rubik;
+    color: rgb(255, 255, 255);
+    text-transform: uppercase;
+    -webkit-text-stroke-width: 1.5px;
+    -webkit-text-stroke-color: rgb(0, 0, 0);
+}
+/* 
+* Titulos centrados de /Pages
+ */
+@mixin titulocentrado {
+    font-size: 25px;
+    font-family: $rubik;
+    text-align: center;
+    color: rgb(255, 255, 255);
+    text-transform: uppercase;
+    -webkit-text-stroke-width: 1.5px;
+    -webkit-text-stroke-color: rgb(0, 0, 0);
+}
+/* 
+* Parrafo normal
+ */
+ @mixin parrafonormal {
+    font-size: 25px;
+    font-family: $roboto;
+    margin: 50px;
+    color: black;
+ }

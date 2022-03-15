@@ -1,0 +1,611 @@
+.bodydiv {
+    display: grid;
+    width: 100vw;
+    background-color: $color1;
+    grid-template-columns: 1fr;
+    gap: 5px 0px;
+    grid-template-rows: auto 0.6fr 0.4fr auto 0.2fr auto auto 1fr 0.2fr;
+    grid-template-areas: 
+      "header"
+      "hero"
+      "section0"
+      "section1"
+      "section2"
+      "section3"
+      "section4"
+      "section5"
+      "footer";
+
+       .hero{
+           grid-area: hero;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-attachment: fixed;
+            min-height: 500px;
+            background-image: url(../multimedia/images/hero.png);
+            div{
+                display: flex;
+                padding: 10px;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                .textohero{
+                    font-size: 40px;
+                    font-family: $herofont;
+                    text-transform: uppercase;
+                    text-align: center;
+                    color: rgba(0, 0, 0, 0.2);
+                    text-shadow: black 0.1em 0.1em 0.5em;
+                    -webkit-text-stroke-width: 1px;
+                    margin: 5px;
+                    -webkit-text-stroke-color: rgb(255, 255, 255);
+                }
+            }
+        }
+        .section0{
+            grid-area: section0;
+            display: flex;
+            background-color: $color2;
+            width: 100vw;
+            align-items: center;
+            flex-direction: column;
+            h1{
+            @include tituloprincipal;
+            }
+            div{
+                margin: 20px;
+                display: flex;
+                align-items: center;
+                .card{
+                    display: flex;
+                    flex-direction: column;
+                    height: 23rem;
+                    width: 15rem;
+                    margin: 10px;
+                    div{
+                        display: flex;
+                        flex-direction: column;
+                        h5{
+                            font-family: $impact;
+                            color: rgb(22, 21, 21);
+                        }
+                    }
+                    img{
+                        max-width: 200px;
+                    }
+                }
+            }
+        }
+        .section1{
+            grid-area: section1;
+            width: 100vw;
+            background-color: $color3;
+            display: flex;
+            flex-direction: column;
+            padding: 5%;
+            h2{
+                font-size: 25px;
+                font-family: $rubik;
+                color: rgb(255, 255, 255);
+                text-transform: uppercase;
+                -webkit-text-stroke-width: 1.5px;
+                -webkit-text-stroke-color: rgb(0, 0, 0);
+            }
+            div{
+                p{
+                    @include parrafonormal;
+                }
+            }
+        }
+        .section2{
+            grid-area: section2;
+            width: 100vw;
+            background-color: $color2;
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            .titulocentrado{
+                
+                display: flex;
+                align-items: center;
+                margin: 10px;
+                font-size: 25px;
+                font-family: $rubik;
+                color: rgb(255, 255, 255);
+                text-transform: uppercase;
+                -webkit-text-stroke-width: 1.5px;
+                -webkit-text-stroke-color: rgb(0, 0, 0);
+            }
+            div{
+                margin: 10px;
+                display: flex;
+                justify-content: space-around;
+                align-items: center;
+                .card2{
+                    display: flex;
+                    flex-direction: column;
+                    height: 22rem;
+                    width: 15rem;
+                    margin: 10px;
+                    background-color: white;
+                    div{
+                        display: flex;
+                        flex-direction: column;
+                    }
+                    img{
+                        max-width: 200px;
+                    }
+                }
+            }
+        }
+        .section3{
+            grid-area: section3;
+            width: 100vw;
+            display: flex;
+            flex-direction: column;
+            background-color: $color3;
+            padding: 5%;
+            h2{
+                @include tituloLeft;
+            }
+            p{
+                @include parrafonormal;
+                span{
+                    font-size: 25px;
+                    color: rgb(255, 255, 255);
+                    font-family: $rubik;
+                    -webkit-text-stroke-width: 1.2px;
+                    -webkit-text-stroke-color: rgb(0, 0, 0);
+                
+                }
+            }
+        
+        }
+        .section4{
+            grid-area: section4;
+            width: 100vw;
+            background-color: $color3;
+            display: flex;
+            flex-direction: column;
+            padding: 5%;
+            h2{
+                @include tituloLeft;
+            }
+            p{
+                @include parrafonormal;
+            }
+        }
+        .section5{
+            grid-area: section5;
+            display: flex;
+            width: 100vw;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            h2{
+                @include tituloLeft;
+            }
+            div{
+                display: flex;
+                img{
+                    height: 400px;
+                    width: 300px;
+                    margin: 30px;
+                    &:hover{
+                    transition: all 1s;
+                    transform: scale(1.11);
+                    }
+                }
+            }
+        }
+}
+
+
+.igtwsections {  
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    background-color: $color4;
+    grid-template-rows: 0.4fr 0.3fr auto auto ;
+    gap: 0px 5px;
+    grid-auto-flow: row;
+    grid-template-areas:
+        "section1pages section1pages"
+        "igtwsection2 igtwsection3"
+        "igtwsection4 igtwsection4"
+        "igtwsection5 igtwsection5";
+
+        .igtwsection1{
+            grid-area: section1pages;
+            display: flex;
+            width: 100vw;
+            background-color: $color2;
+            justify-content: center;
+            flex-direction: column;
+            h1{
+                @include tituloprincipal;
+            
+            }   
+            div{
+                margin-top: 20px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                .cardIgTw{
+                    display: flex;
+                    flex-direction: column;
+                    height: 23rem;
+                    width: 15rem;
+                    margin: 10px;
+                    div{
+                        display: flex;
+                        flex-direction: column;
+                        max-height: 20px;
+                        img{
+                            max-width: 200px;
+                        }
+                    }
+                }
+            }
+        }
+        .igtwsection2 { 
+            grid-area: igtwsection2;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 10px;
+            background-color: $color2;
+            h2{
+                @include titulocentrado;
+            }
+            div{
+                width: 90%;
+            }
+        }
+        .igtwsection3 { 
+            grid-area: igtwsection3;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 10px;
+            background-color: $color2;
+            .igtwsection3titulo{
+                text-align: center;
+                font-size: 25px;
+                font-family: $rubik;
+                color: rgb(255, 255, 255);
+                text-transform: uppercase;
+                -webkit-text-stroke-width: 1.5px;
+                -webkit-text-stroke-color: rgb(0, 0, 0);
+            }
+            div{ /* esta es la table de instagram(Boostrap)*/
+                width: 90%;
+            }
+            .twsection3parrafo{
+                margin-top: 5em;
+                p{
+                    font-size: 16px;
+                    text-align: center;
+                    font-family: $rubik;
+                    margin: 20px;
+                    color: $color3;
+                    text-shadow: rgba(0, 0, 0, 0.712) 0.1em 0.1em 0.2em;   
+                }
+            }
+        }
+        .igtwsection4 { 
+            grid-area: igtwsection4;
+            display: flex;
+            flex-direction: column;
+            width: 100vw;
+            background-image: $fondosection4;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-attachment: fixed;
+            .igtwsection4titulo{
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                width: 100%;
+                padding: 5%;
+                background-color: $color4;  
+                background-size: cover;
+                h2{
+                    @include titulocentrado;
+                }
+            
+            }
+            .igtwsection4parrafo{
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                width: 100%;
+                .p1{
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    height: 200px;
+                    padding: 20px;
+
+                    p{
+                        font-size: 16px;
+                        text-align: center;
+                        font-family: $rubik;
+                        margin: 20px;
+                        color: rgb(255, 255, 255);
+                        text-shadow: black 0.1em 0.1em 0.2em;
+                    }
+                }
+                .p2{
+                    display: flex;
+                    justify-content: center;
+                    align-items: flex-end;
+                    height: 200px;
+                    padding: 20px;
+
+                    p{
+                        font-size: 16px;
+                        text-align: center;
+                        font-family: $rubik;
+                        margin: 20px;
+                        color: rgb(255, 255, 255);
+                        text-shadow: black 0.1em 0.1em 0.2em;
+                    }
+                }
+            }
+        }
+        .igtwsection5 {
+            grid-area: igtwsection5;
+            display: flex;
+            flex-direction: column;
+            width: 100vw;
+            background-color: $color4;
+            .igtwsection5titulo{
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                padding: 5%;
+                width: 100vw;
+                background-color: $color4;
+                background-size: cover;
+                h2{
+                    @include titulocentrado;
+                }
+            }
+            .igtwsection5parrafo{
+                display: flex;
+                align-items: center;
+                width: 100vw;
+                flex-direction: row-reverse;
+                justify-content: center;
+                background-color: $color3;
+                padding: 2%;
+                p{
+                    @include parrafonormal;
+                    span{
+                        font-size: 25px;
+                        color: rgb(255, 255, 255);
+                        font-family: $rubik;
+                        -webkit-text-stroke-width: 1.2px;
+                        -webkit-text-stroke-color: rgb(0, 0, 0);
+                    }
+                }
+                
+            }
+        }
+
+}
+
+.nmain{
+    background-color: $color1;
+    .hero2{
+         display: flex;
+         align-items: center;
+         justify-content: center;
+         background-position: center;
+         background-repeat: no-repeat;
+         background-size: cover;
+         background-attachment: fixed;
+         min-height: 400px;
+         background-image: url(../multimedia/images/fondoo.jpg);
+         div{
+             display: flex;
+             padding: 10px;
+             flex-direction: column;
+             justify-content: center;
+             align-items: center;
+             .textohero{
+                 font-size: 30px;
+                 font-family: $herofont;
+                 text-transform: uppercase;
+                 text-align: center;
+                 color: rgb(255, 255, 255);
+                 text-shadow: black 0.1em 0.1em 0.5em;
+                 margin: 5px;
+                 -webkit-text-stroke-color: rgb(255, 255, 255);
+             }
+         }
+     }
+    .nsection1{
+        display: flex;
+        padding: 10px;
+        justify-content: center;
+        align-items: center;
+        .card{
+            margin: 10px;
+            height: 250px;
+        }
+    }
+        .nsection2{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            width: 100vw;
+            padding: 10px;
+            margin-top: 10px;
+            background-color: $color2;
+            h2{
+                @include titulocentrado;
+            }
+            form{
+                display: flex;
+                width: 60%;
+                flex-direction: column;
+                div{
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-between;
+                    label{
+                        text-transform: uppercase;
+                        color: whitesmoke;
+                        margin: 4px;
+                        min-width: 200px;
+                    }
+                    input{
+                        margin: 4px;
+                        min-width: 200px;
+                    }
+                }
+                .consultaform{
+                    height: 100px;
+                }
+                button{
+                    max-height: 100px;
+                }
+            }
+        }
+}
+
+.recomendadomain{
+    background-color: $color2;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    h2{
+        @include titulocentrado;
+    }
+    section{
+        display: flex;
+        flex-direction: row;
+        div{
+            margin: 10px;
+        }
+        
+    }
+}
+
+
+/* MEDIA QUERIES - Ordenados de de mayor a menor (px)  */
+
+@media (max-width: 1180px) {
+    .recomendadomain section{
+        flex-direction: column;
+    }
+}    
+ 
+@media (max-width: 1080px) {
+    .section5{
+        div{
+            flex-direction: column;
+        }
+    }
+}
+
+@media (max-width: 1020px) {
+
+    .igtwsection1 div{
+        flex-direction: column;
+    }
+
+    .section1{
+        align-items: center;
+        padding: 10px ;
+        justify-content: center;
+    }
+
+    .section3{
+        align-items: center;
+        padding: 10px ;
+        justify-content: center;
+    }
+    .section4{
+        align-items: center;
+        padding: 10px ;
+        justify-content: center;
+    }
+
+}
+
+@media (max-width: 920px){
+
+    .section0 div{
+        flex-direction: column;
+     }
+     
+     .section2{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .section2 div{
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 720px){
+    .igtwsections {  
+        display: grid;
+        grid-template-areas:
+        "section1pages"
+        "igtwsection2"
+        "igtwsection3"
+        "igtwsection4"
+        "igtwsection5"
+        ;
+    }
+    .header div nav{
+        flex-direction: column;
+    }
+    .igtwsection4parrafo{
+        flex-direction: column;
+    }
+    .nsection1{
+        flex-direction: column;
+    }
+    .nsection2{
+
+        form{
+            div{
+                flex-direction: column;
+                label{
+                    text-align: center;
+                }
+            }
+        }
+    }
+
+}
+
+ 
+@media (max-width: 650px) {
+
+    .recomendadomain section div iframe{
+        max-width: 300px;
+    }
+}   
+
+
+@media (max-width: 400px){
+    .footer{
+        justify-content: center;
+    }
+    .footer div{
+        flex-direction: column;
+        margin-left: 20px;
+    }
+}

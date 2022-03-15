@@ -1,0 +1,35 @@
+.footer {
+    grid-area: footer;
+    background-color: #02101b;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px;
+    width: 100vw;
+    ul {
+        list-style: none;
+        li{
+            a {
+                color: floralwhite;
+                text-decoration: wavy;
+                font-family: "Oswald", sans-serif;
+                text-transform: uppercase;
+                &:hover{
+                    transition: all 0, 2;
+                    color: #eb5858;
+                }
+            }
+        }
+      }
+    div {
+        display: flex;
+        a {
+            img{
+                margin: 5px;
+                height: 40px;
+                width: 40px;
+            }
+          }
+      }
+  }
+

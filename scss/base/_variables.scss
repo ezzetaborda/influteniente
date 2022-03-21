@@ -18,7 +18,7 @@ $fondosection4: url(/multimedia/images/fondosection3.png); /* fondo de Section4p
 /* 
 * Titulo de productos
  */
-@mixin tituloprincipal {
+@mixin titulo1 {
     display: flex;
     justify-content: center;
     width: 100%;
@@ -26,7 +26,7 @@ $fondosection4: url(/multimedia/images/fondosection3.png); /* fondo de Section4p
     font-size: 30px;
     font-family: $rubik;
     color: white;
-    letter-spacing: 5px;
+    letter-spacing: 2px;
     text-transform: uppercase;
     -webkit-text-stroke-width: 1.5px;
     -webkit-text-stroke-color: black;
@@ -35,21 +35,9 @@ $fondosection4: url(/multimedia/images/fondosection3.png); /* fondo de Section4p
 /* 
 * Titulo lado izquierdo
  */
-@mixin tituloLeft {
+@mixin titulo2 {
     font-size: 25px;
     font-family: $rubik;
-    color: rgb(255, 255, 255);
-    text-transform: uppercase;
-    -webkit-text-stroke-width: 1.5px;
-    -webkit-text-stroke-color: rgb(0, 0, 0);
-}
-/* 
-* Titulos centrados de /Pages
- */
-@mixin titulocentrado {
-    font-size: 25px;
-    font-family: $rubik;
-    text-align: center;
     color: rgb(255, 255, 255);
     text-transform: uppercase;
     -webkit-text-stroke-width: 1.5px;

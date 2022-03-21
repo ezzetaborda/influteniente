@@ -54,7 +54,7 @@
             align-items: center;
             flex-direction: column;
             h1{
-            @include tituloprincipal;
+            @include titulo1;
             }
             div{
                 margin: 20px;
@@ -88,12 +88,7 @@
             flex-direction: column;
             padding: 5%;
             h2{
-                font-size: 25px;
-                font-family: $rubik;
-                color: rgb(255, 255, 255);
-                text-transform: uppercase;
-                -webkit-text-stroke-width: 1.5px;
-                -webkit-text-stroke-color: rgb(0, 0, 0);
+                @include titulo2;
             }
             div{
                 p{
@@ -108,17 +103,9 @@
             display: flex;
             align-items: center;
             flex-direction: column;
-            .titulocentrado{
-                
-                display: flex;
+            h2{
+                @include titulo2;
                 align-items: center;
-                margin: 10px;
-                font-size: 25px;
-                font-family: $rubik;
-                color: rgb(255, 255, 255);
-                text-transform: uppercase;
-                -webkit-text-stroke-width: 1.5px;
-                -webkit-text-stroke-color: rgb(0, 0, 0);
             }
             div{
                 margin: 10px;
@@ -150,7 +137,7 @@
             background-color: $color3;
             padding: 5%;
             h2{
-                @include tituloLeft;
+                @include titulo2;
             }
             p{
                 @include parrafonormal;
@@ -173,7 +160,7 @@
             flex-direction: column;
             padding: 5%;
             h2{
-                @include tituloLeft;
+                @include titulo2;
             }
             p{
                 @include parrafonormal;
@@ -187,7 +174,7 @@
             justify-content: center;
             flex-direction: column;
             h2{
-                @include tituloLeft;
+                @include titulo2;
             }
             div{
                 display: flex;
@@ -207,6 +194,7 @@
 
 .igtwsections {  
     display: grid;
+    width: 100vw;
     grid-template-columns: 1fr 1fr;
     background-color: $color4;
     grid-template-rows: 0.4fr 0.3fr auto auto ;
@@ -221,12 +209,11 @@
         .igtwsection1{
             grid-area: section1pages;
             display: flex;
-            width: 100vw;
             background-color: $color2;
             justify-content: center;
             flex-direction: column;
             h1{
-                @include tituloprincipal;
+                @include titulo1;
             
             }   
             div{
@@ -259,7 +246,8 @@
             padding: 10px;
             background-color: $color2;
             h2{
-                @include titulocentrado;
+                @include titulo2;
+                text-align: center;
             }
             div{
                 width: 90%;
@@ -272,14 +260,9 @@
             align-items: center;
             padding: 10px;
             background-color: $color2;
-            .igtwsection3titulo{
-                text-align: center;
-                font-size: 25px;
-                font-family: $rubik;
-                color: rgb(255, 255, 255);
-                text-transform: uppercase;
-                -webkit-text-stroke-width: 1.5px;
-                -webkit-text-stroke-color: rgb(0, 0, 0);
+            h2{
+               @include titulo2;
+               text-align: center; 
             }
             div{ /* esta es la table de instagram(Boostrap)*/
                 width: 90%;
@@ -300,7 +283,6 @@
             grid-area: igtwsection4;
             display: flex;
             flex-direction: column;
-            width: 100vw;
             background-image: $fondosection4;
             background-position: center;
             background-repeat: no-repeat;
@@ -315,7 +297,8 @@
                 background-color: $color4;  
                 background-size: cover;
                 h2{
-                    @include titulocentrado;
+                    @include titulo2;
+                    text-align: center; 
                 }
             
             }
@@ -323,7 +306,6 @@
                 display: flex;
                 align-items: center;
                 justify-content: center;
-                width: 100%;
                 .p1{
                     display: flex;
                     justify-content: center;
@@ -362,7 +344,6 @@
             grid-area: igtwsection5;
             display: flex;
             flex-direction: column;
-            width: 100vw;
             background-color: $color4;
             .igtwsection5titulo{
                 display: flex;
@@ -373,7 +354,8 @@
                 background-color: $color4;
                 background-size: cover;
                 h2{
-                    @include titulocentrado;
+                    @include titulo2;
+                    text-align: center; 
                 }
             }
             .igtwsection5parrafo{
@@ -432,6 +414,7 @@
      }
     .nsection1{
         display: flex;
+        width: 100vw;
         padding: 10px;
         justify-content: center;
         align-items: center;
@@ -450,7 +433,8 @@
             margin-top: 10px;
             background-color: $color2;
             h2{
-                @include titulocentrado;
+                @include titulo2;
+                text-align: center;     
             }
             form{
                 display: flex;
@@ -483,14 +467,16 @@
 
 .recomendadomain{
     background-color: $color2;
+    width: 100vw;
     display: flex;
     flex-direction: column;
-    align-items: center;
     h2{
-        @include titulocentrado;
+        @include titulo1;
     }
     section{
         display: flex;
+        justify-content: center;
+        width: 100vw;   
         flex-direction: row;
         div{
             margin: 10px;
@@ -505,6 +491,8 @@
 @media (max-width: 1180px) {
     .recomendadomain section{
         flex-direction: column;
+        justify-content: center;
+        align-items: center;
     }
 }    
  

@@ -26,9 +26,6 @@
 * Titulo lado izquierdo
  */
 /* 
-* Titulos centrados de /Pages
- */
-/* 
 * Parrafo normal
  */
 .header {
@@ -37,6 +34,7 @@
   background-color: #02101b;
   flex-direction: column;
   align-items: center;
+  width: 100vw;
 }
 .header img {
   background-image: url(../multimedia/images/logo/influteniente.png);
@@ -117,7 +115,7 @@
   font-size: 30px;
   font-family: "Rubik", sans-serif;
   color: white;
-  letter-spacing: 5px;
+  letter-spacing: 2px;
   text-transform: uppercase;
   -webkit-text-stroke-width: 1.5px;
   -webkit-text-stroke-color: black;
@@ -175,16 +173,14 @@
   align-items: center;
   flex-direction: column;
 }
-.bodydiv .section2 .titulocentrado {
-  display: flex;
-  align-items: center;
-  margin: 10px;
+.bodydiv .section2 h2 {
   font-size: 25px;
   font-family: "Rubik", sans-serif;
   color: white;
   text-transform: uppercase;
   -webkit-text-stroke-width: 1.5px;
   -webkit-text-stroke-color: black;
+  align-items: center;
 }
 .bodydiv .section2 div {
   margin: 10px;
@@ -289,6 +285,7 @@
 
 .igtwsections {
   display: grid;
+  width: 100vw;
   grid-template-columns: 1fr 1fr;
   background-color: #02101b;
   grid-template-rows: 0.4fr 0.3fr auto auto;
@@ -299,7 +296,6 @@
 .igtwsections .igtwsection1 {
   grid-area: section1pages;
   display: flex;
-  width: 100vw;
   background-color: #041d30;
   justify-content: center;
   flex-direction: column;
@@ -312,7 +308,7 @@
   font-size: 30px;
   font-family: "Rubik", sans-serif;
   color: white;
-  letter-spacing: 5px;
+  letter-spacing: 2px;
   text-transform: uppercase;
   -webkit-text-stroke-width: 1.5px;
   -webkit-text-stroke-color: black;
@@ -349,11 +345,11 @@
 .igtwsections .igtwsection2 h2 {
   font-size: 25px;
   font-family: "Rubik", sans-serif;
-  text-align: center;
   color: white;
   text-transform: uppercase;
   -webkit-text-stroke-width: 1.5px;
   -webkit-text-stroke-color: black;
+  text-align: center;
 }
 .igtwsections .igtwsection2 div {
   width: 90%;
@@ -366,14 +362,14 @@
   padding: 10px;
   background-color: #041d30;
 }
-.igtwsections .igtwsection3 .igtwsection3titulo {
-  text-align: center;
+.igtwsections .igtwsection3 h2 {
   font-size: 25px;
   font-family: "Rubik", sans-serif;
   color: white;
   text-transform: uppercase;
   -webkit-text-stroke-width: 1.5px;
   -webkit-text-stroke-color: black;
+  text-align: center;
 }
 .igtwsections .igtwsection3 div {
   /* esta es la table de instagram(Boostrap)*/
@@ -394,7 +390,6 @@
   grid-area: igtwsection4;
   display: flex;
   flex-direction: column;
-  width: 100vw;
   background-image: url(/multimedia/images/fondosection3.png);
   background-position: center;
   background-repeat: no-repeat;
@@ -413,17 +408,16 @@
 .igtwsections .igtwsection4 .igtwsection4titulo h2 {
   font-size: 25px;
   font-family: "Rubik", sans-serif;
-  text-align: center;
   color: white;
   text-transform: uppercase;
   -webkit-text-stroke-width: 1.5px;
   -webkit-text-stroke-color: black;
+  text-align: center;
 }
 .igtwsections .igtwsection4 .igtwsection4parrafo {
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 100%;
 }
 .igtwsections .igtwsection4 .igtwsection4parrafo .p1 {
   display: flex;
@@ -459,7 +453,6 @@
   grid-area: igtwsection5;
   display: flex;
   flex-direction: column;
-  width: 100vw;
   background-color: #02101b;
 }
 .igtwsections .igtwsection5 .igtwsection5titulo {
@@ -474,11 +467,11 @@
 .igtwsections .igtwsection5 .igtwsection5titulo h2 {
   font-size: 25px;
   font-family: "Rubik", sans-serif;
-  text-align: center;
   color: white;
   text-transform: uppercase;
   -webkit-text-stroke-width: 1.5px;
   -webkit-text-stroke-color: black;
+  text-align: center;
 }
 .igtwsections .igtwsection5 .igtwsection5parrafo {
   display: flex;
@@ -536,6 +529,7 @@
 }
 .nmain .nsection1 {
   display: flex;
+  width: 100vw;
   padding: 10px;
   justify-content: center;
   align-items: center;
@@ -557,11 +551,11 @@
 .nmain .nsection2 h2 {
   font-size: 25px;
   font-family: "Rubik", sans-serif;
-  text-align: center;
   color: white;
   text-transform: uppercase;
   -webkit-text-stroke-width: 1.5px;
   -webkit-text-stroke-color: black;
+  text-align: center;
 }
 .nmain .nsection2 form {
   display: flex;
@@ -592,21 +586,27 @@
 
 .recomendadomain {
   background-color: #041d30;
+  width: 100vw;
   display: flex;
   flex-direction: column;
-  align-items: center;
 }
 .recomendadomain h2 {
-  font-size: 25px;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  background-color: #ff3c00;
+  font-size: 30px;
   font-family: "Rubik", sans-serif;
-  text-align: center;
   color: white;
+  letter-spacing: 2px;
   text-transform: uppercase;
   -webkit-text-stroke-width: 1.5px;
   -webkit-text-stroke-color: black;
 }
 .recomendadomain section {
   display: flex;
+  justify-content: center;
+  width: 100vw;
   flex-direction: row;
 }
 .recomendadomain section div {
@@ -617,6 +617,8 @@
 @media (max-width: 1180px) {
   .recomendadomain section {
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
   }
 }
 @media (max-width: 1080px) {
